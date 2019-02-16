@@ -1,3 +1,8 @@
+# This is a rip from https://github.com/vanhauser-thc/afl-dyninst
+What i do is building a working docker with dyninst10 for arm support (hopefully).
+I modified Makefile and Dockerfile for my needs. 
+Now to the original readme:
+
 # American Fuzzy Lop + Dyninst == AFL Fuzzing blackbox binaries
 
 The tool has two parts. The instrumentation tool and the instrumentation 

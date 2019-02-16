@@ -2,14 +2,14 @@
 DYNINST_ROOT = /usr/local
 
 # EDIT: you must set this to your dyninst build directory if you build with v10
-DYNINST_BUILD = /path/to/dyninst/build
+DYNINST_BUILD = ../dyninst/build
 
 # better dont touch these
 DYNINST9=-lcommon -liberty
 DYNINST10=-I$(DYNINST_BUILD)/tbb/src/TBB/src/include -lboost_system -L$(DYNINST_BUILD)/tbb/lib -ltbb -Wl,-rpath $(DYNINST_BUILD)/tbb/lib
 
 # EDIT: set this to either DYNINST9 or DYNINST10 depending on what you installed
-DYNINST_OPT = $(DYNINST9)
+DYNINST_OPT = $(DYNINST10)
 
 # path to afl src 
 AFL_ROOT = ./afl 
